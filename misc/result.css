@@ -1,0 +1,30 @@
+body {
+  background-color: black;
+  padding: 50px 100px;
+}
+
+.result-item {
+  background-color: #222222;
+  border-radius: 25px;
+  padding: 30px;
+  text-align: center;
+  color: white;
+  opacity: 0;
+}
+
+.result-img {
+  width: 80%;
+  margin: 20px 0px;
+}
+
+.result-text {
+  font: 18pt courier new;
+}
+
+#go-back {
+  float: left;
+}
+
+#new-game {
+  float: right;
+}

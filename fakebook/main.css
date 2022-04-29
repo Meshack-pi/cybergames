@@ -1,0 +1,82 @@
+html {
+  height: 100%;
+}
+
+body {
+  background: url(images/bg.jpg) no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+}
+
+.error {
+  color: red;
+  display: none;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.slogan {
+  color: white;
+  font: 18pt cursive;
+  position: absolute;
+  left: 5%;
+  bottom: 2%;
+}
+
+.logo {
+  height: 40px;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+.login-btn {
+  float: right;
+  margin: 15px;
+}
+
+#password {
+  margin-top: 10px;
+}
+
+div.modal-dialog.inner {
+  width: 50%;
+  margin: auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%) !important;
+}
+
+.sign-in {
+  font: 14pt arial;
+}
+
+#forgot-pass {
+  float: left;
+  padding-top: 5px;
+}
+
+.reset-contain {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.reset-box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px black;
+}
+
+#pass1, #pass2 {
+  margin: 15px 0px;
+}
+
+.help-text {
+  font: 16pt arial;
+}
+
+.alert {
+  display: none;
+}

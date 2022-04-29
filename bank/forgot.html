@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Libraries -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+
+    <!-- Data -->
+    <script src="questions.js"></script>
+
+    <!-- Scripts and Stylesheets -->    
+    <script src="forgot.js"></script>
+    <link rel="stylesheet" href="main.css"></link>
+  </head>
+  <body>
+    <div class="login-contain container-fluid">
+      <div class="row">
+        <div class="login-box col-xs-6 col-xs-offset-3 col-md-4 col-md-offset-4">
+          <img class="logo" src="images/logo.png">
+          <p class="help-text">To unlock your account, please first enter your email address.</p>
+          <label for="answer" id="question"></label>
+          <input class="form-control" id="answer" type="text" placeholder="Your Answer"></input>
+          <div class="error">That account does not exist.</div>
+          <button type="submit" id="next" class="btn btn-success">Next</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

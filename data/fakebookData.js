@@ -1,0 +1,362 @@
+fakebookData = [
+{
+  "name": "Jack Pot",
+  "email": "jackpot@zmail.com",
+  "phone number": "(420) 420-6969",
+  "birthday": "4/20/69",
+  "relationships": ["Lucy Wang", "Shannon Chang"],
+  "relationship status": "Dating Shannon Chang",
+  "elementary school": "Lincoln Elementary",
+  "middle school": "Washington Middle",
+  "high school": "Iams High",
+  "college": "MIT",
+  "favorite actors": ["Leonardo DiCaprio"],
+  "favorite musicians": ["Taylor Swift"],
+  "favorite artists": ["Vincent Van Gogh"],
+  "favorite food": "turkey legs",
+  "father middle name": "Gross",
+  "mother maiden name": "Byes",
+  "friends": [ 
+{
+  "name": "Daniel Gross Pot", 
+  "image": "https://randomuser.me/api/portraits/men/7.jpg",
+},
+{ 
+  "name": "Ellen Byes-Pot", 
+  "image": "https://randomuser.me/api/portraits/women/72.jpg",
+},
+{
+  "name": "Adam Arnold",
+  "image": "https://randomuser.me/api/portraits/men/62.jpg",
+},
+{
+  "name": "Bob Doe",
+  "image": "https://randomuser.me/api/portraits/men/38.jpg",
+},
+{
+  "name": "Jane Sherry",
+  "image": "https://randomuser.me/api/portraits/women/15.jpg",
+},
+  ],
+  "birthplace": "Portland, Oregon",
+  "child vacation": "Machu Picchu",
+  "adult vacation": "Disneyland",
+  "favorite movie": "Mulan",
+  "favorite pet": "Watson",
+  "posts": [
+    {
+      "text": "This photo brings back so many childhood memories. Too bad my family and I don't have time to travel to places like this anymore. Maybe someday when I have children I'll take them here.",
+      "image": "https://kondorpathtours.com/wp-content/uploads/2017/01/where-is-machu-picchu.jpg",
+    },
+    {
+      "text": "This is my seventh time watching Mulan, but it is still so good! Mulan is so brave! I wish more women were like her.",
+      "image": "http://schmoesknow.com/wp-content/uploads/2016/10/mulan.jpg",
+    },
+    {
+      "text": "Just got my first dog!",
+      "image": "https://heavyeditorial.files.wordpress.com/2015/04/9473615960_b32f276d72_k.jpg?quality=65&strip=all&w=780&strip=all",
+    },
+    {
+      "text": "Just went to Disneyland for the first time! Would've been more magical if I was a child, but hey, it's never too late to start anything. Also, they have amazing turkey legs.",
+      "image": "https://secure.parksandresorts.wdpromedia.com/media/disneyparks/blog/wp-content/uploads/2016/09/ksjdnf313.jpg",
+    },
+  ],
+  "favorite animal": "dog",
+  "favorite color": "green",
+  "background color": "#006400",
+  "favorite season": "summer",
+  "profile image": "http://mhalabs.org/wp-content/uploads/upme/1451456913_brodie.jpg",
+  "banner image": "https://images.fineartamerica.com/images-medium-large/beautiful-mountain-scenery-corey-hochachka.jpg",
+},
+
+{
+  "name": "Merry Juana",
+  "email": "merryjuana@zmail.com",
+  "phone number": "(420) 111-1111",
+  "birthday": "8/2/95",
+  "relationships": ["Cookie T.", "Zelda Fitz"],
+  "relationship status": "In a relationship with Zelda Fitz",
+  "elementary school": "Kansas Elementary",
+  "middle school": "Kansas Middle",
+  "high school": "did not graduate",
+  "college": "did not go to college",
+  "favorite actors": ["Leonardo DiCaprio"],
+  "favorite musicians": ["Guns N Roses", "Bon Jovi", "Nirvana"],
+  "favorite artists": ["Andy Warhol"],
+  "favorite food": "BBQ",
+  "father middle name": "Laurel",
+  "mother maiden name": "Silicon",
+  "friends": [ 
+    {
+      "name": "Pedro Laurel Juana", 
+      "image": "https://randomuser.me/api/portraits/men/0.jpg", 
+    },
+    { 
+      "name": "Elizabeth Silicon-Juana", 
+      "image": "https://randomuser.me/api/portraits/women/48.jpg", 
+    },
+    {
+      "name": "Janet January Herrera",
+      "image": "https://randomuser.me/api/portraits/women/81.jpg",
+    },
+    {
+      "name": "Valerie Sayo Rivera",
+      "image": "https://randomuser.me/api/portraits/women/57.jpg",
+    },
+  ],
+  "birthplace": "Kansas City, Kansas",
+  "child vacation": "Seoul",
+  "adult vacation": "Kansas",
+  "favorite movie": "The Social Network",
+  "favorite pet": "Koala",
+  "posts": [
+    {
+      "text": "Man, I remember eating the best BBQ here. One day, I'll come back to Seoul with a bigger appetite and appreciation for the culture!",
+      "image": "http://country-clone.htl-web.com/files/2014/02/Seoul-South-Korea-Skyline-iStock_50381588_MEDIUM.jpg",
+    },
+    {
+      "text": "This movie is soooo fake. As someone with experience dropping out of high school and starting web apps, this movie is NOTHING like how it is in real life #sorrynotsorry.",
+      "image": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTM2ODk0NDAwMF5BMl5BanBnXkFtZTcwNTM1MDc2Mw@@._V1_UY1200_CR66,0,630,1200_AL_.jpg",
+    },
+    {
+      "text": "Just got my first bird! Yes, I named it Koala. Deal with it.",
+      "image": "http://www.petmd.com/sites/default/files/bird-home-dangers1.jpg",
+    },
+    {
+      "text": "Nothing like a stay-cation!",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Konza2.jpg",
+    },
+  ],
+  "favorite animal": "koala",
+  "favorite color": "red",
+  "background color": "#a31b06",
+  "favorite season": "fall",
+  "profile image": "http://res.freestockphotos.biz/pictures/14/14114-a-beautiful-young-business-woman-posing-on-a-white-background-pv.jpg",
+  "banner image": "http://country-clone.htl-web.com/files/2014/02/Seoul-South-Korea-Skyline-iStock_50381588_MEDIUM.jpg",
+},
+
+{
+  "name": "Rhu Phi",
+  "email": "rhuphi@zmail.com",
+  "phone number": "(123) 456-7890",
+  "birthday": "3/14/90",
+  "relationships": ["Wye Naught", "Aleph Null", "Psi Nil"],
+  "relationship status": "Married to Psi Nil",
+  "elementary school": "Math Elementary",
+  "middle school": "Math Middle",
+  "high school": "Math High",
+  "college": "Caltech",
+  "favorite actors": ["Leonardo DiCaprio"],
+  "favorite musicians": ["Beethoven"],
+  "favorite artists": ["Picasso"],
+  "favorite food": "potato chips",
+  "father middle name": "Tee",
+  "mother maiden name": "Matter",
+  "friends": [ 
+{
+  "name": "Beau Tee Phi", 
+  "image": "https://randomuser.me/api/portraits/men/40.jpg", 
+},
+{ 
+  "name": "Mind Matter-Phi", 
+  "image": "https://randomuser.me/api/portraits/women/3.jpg", 
+},
+    {
+      "name": "Arron Cool Hunt",
+      "image": "https://randomuser.me/api/portraits/men/9.jpg",
+    },
+    {
+      "name": "Jackie Rockie Gibson",
+      "image": "https://randomuser.me/api/portraits/women/20.jpg",
+    },
+    {
+      "name": "Beverly Hills Watts",
+      "image": "https://randomuser.me/api/portraits/women/45.jpg",
+    },
+  ],
+  "birthplace": "Cape Town, South Africa",
+  "child vacation": "Times Square",
+  "adult vacation": "Egypt",
+  "favorite movie": "A Beautiful Mind",
+  "favorite pet": "Pixel",
+  "posts": [
+    {
+      "text": "I would kill to come here again. The people, the buildings, the culture. Alas, it's just too expensive, and I HATE the cold. Maybe I'll come back when it's warmer #tbt.",
+      "image": "http://www.nycgo.com/images/venues/152/tripadvisortimessquare_taggeryanceyiv_5912__x_large.jpg",
+    },
+    {
+      "text": "spoiler alert: If she was imagining everything, then how does that explain the voices that Aaron heard in act II of Jessica's play? I'm just saying, be a little bit more consistent. Still the best movie though.",
+      "image": "https://upload.wikimedia.org/wikipedia/en/b/b8/A_Beautiful_Mind_Poster.jpg",
+    },
+    {
+      "text": "Isn't my dog cute? (and annoying). We share potato chips all the time...wait can dogs eat potato chips?",
+      "image": "https://safetypupxd.com/wp-content/uploads/2015/12/dog-name-tag.jpg",
+    },
+    {
+      "text": "I want to study these pyramids for the rest of  my life. What significant structures.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/a/af/All_Gizah_Pyramids.jpg",
+    },
+    {
+      "text": "Man, look at all those wild geese out there! I love chasing them around :P",
+      "image": "https://static.pexels.com/photos/67600/goose-animal-bird-nature-67600.jpeg",
+    },
+  ],
+  "favorite animal": "dog",
+  "favorite color": "blue",
+  "background color": "#042189",
+  "favorite season": "summer",
+  "profile image": "https://thumbs.dreamstime.com/t/portrait-young-african-american-business-woman-black-peop-people-51712602.jpg",
+  "banner image": "https://static.pexels.com/photos/29724/pexels-photo-29724.jpg",
+},
+
+{
+  "name": "Joe Cain",
+  "email": "joecain@zmail.com",
+  "phone number": "(617) 010-0000",
+  "birthday": "1/11/85",
+  "relationships": ["Arnold Turner", "Wilmur Warner", "Bernard Burner"],
+  "relationship status": "In a domestic partnership with Bernard Burner",
+  "elementary school": "Miami Elementary",
+  "middle school": "Miami Middle",
+  "high school": "O'Reiley High",
+  "college": "Oxford",
+  "favorite actors": ["Leonardo DiCaprio"],
+  "favorite musicians": ["DeadMau5"],
+  "favorite artists": ["Da Vinci"],
+  "favorite food": "bread",
+  "father middle name": "Jacob",
+  "mother maiden name": "Eve",
+  "friends": [ 
+{
+  "name": "Jeff Jacob Cain", 
+  "image": "https://randomuser.me/api/portraits/men/90.jpg", 
+},
+{ 
+  "name": "Alyssa Eve-Cain", 
+  "image": "https://randomuser.me/api/portraits/women/60.jpg", 
+},
+    {
+      "name": "Alan Silvester Evans",
+      "image": "https://randomuser.me/api/portraits/men/28.jpg",
+    },
+    {
+      "name": "Jessica Jones Flores",
+      "image": "https://randomuser.me/api/portraits/women/25.jpg",
+    },
+    {
+      "name": "Clayton Armada Gordon",
+      "image": "https://randomuser.me/api/portraits/men/15.jpg",
+    },
+    {
+      "name": "Brooklyn Newark Cox",
+      "image": "https://randomuser.me/api/portraits/women/56.jpg",
+    },
+  ],
+  "birthplace": "Miami, Florida",
+  "child vacation": "London",
+  "adult vacation": "Iceland",
+  "favorite movie": "The Lincoln Lawyer",
+  "favorite pet": "Purry",
+  "posts": [
+    {
+      "text": "I knew that I would live in London one day. And now look at me- I'm a lawyer!",
+      "image": "https://static.pexels.com/photos/50632/pexels-photo-50632.jpeg",
+    },
+    {
+      "text": "It may be generic, but the main character is totally me! #relatable",
+      "image": "https://i.ytimg.com/vi/_dft2G1a_b0/maxresdefault.jpg",
+    },
+    {
+      "text": "Just got my first cat. I named her Purry!",
+      "image": "http://www.rd.com/wp-content/uploads/sites/2/2016/04/01-cat-wants-to-tell-you-laptop.jpg",
+    },
+    {
+      "text": "The bread is delicious. Why can't London be more like this?",
+      "image": "http://www.realfoodtraveler.com/wp-content/uploads/2015/01/BREAD_3_sm.jpg",
+    },
+    {
+      "text": "I love fishing! Caught quite a few herrings today... should be delicious!",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/4/41/Red_herring.jpg",
+    },
+  ],
+  "favorite animal": "cat",
+  "favorite color": "yellow",
+  "background color": "#fffd87",
+  "favorite season": "winter",
+  "profile image": "https://previews.123rf.com/images/sjenner13/sjenner131108/sjenner13110800263/10336596-Corporate-themed-image-of-business-people-Stock-Photo-asian.jpg",
+  "banner image": "https://upload.wikimedia.org/wikipedia/commons/6/6e/London_Thames_Sunset_panorama_-_Feb_2008.jpg",
+},
+
+{
+  "name": "Hera Owen",
+  "email": "heraowen@zmail.com",
+  "phone number": "(222) 222-222",
+  "birthday": "2/29/60",
+  "relationships": ["Anthony Spacey", "Quantum Fitziks"],
+  "relationship status": "In a committed relationship with Quantum Fitziks",
+  "elementary school": "San Francisco Elementary",
+  "middle school": "San Francisco Middle",
+  "high school": "Sugarland High",
+  "college": "Duke University",
+  "favorite actors": ["Leonardo DiCaprio"],
+  "favorite musicians": ["Beyonce", "Shakira"],
+  "favorite artists": ["Picasso"],
+  "favorite food": "pho",
+  "father": "Athens",
+  "mother": "Sparta",
+  "friends": [ 
+{
+  "name": "Zeus Athens Owen", 
+  "image": "https://randomuser.me/api/portraits/men/62.jpg", 
+},
+{ 
+  "name": "Aphra Sparta-Owen", 
+  "image": "https://randomuser.me/api/portraits/women/25.jpg", 
+},
+    {
+      "name": "Duane Rock Nelson",
+      "image": "https://randomuser.me/api/portraits/men/16.jpg",
+    },
+    {
+      "name": "Brooklyn Newark Cox",
+      "image": "https://randomuser.me/api/portraits/women/56.jpg",
+    },
+
+    {
+      "name": "Lynn Birthright Ross",
+      "image": "https://randomuser.me/api/portraits/women/96.jpg",
+    },
+  ],
+  "birthplace": "Los Angeles, California",
+  "child vacation": "Toronto",
+  "adult vacation": "Vietnam",
+  "favorite movie": "Finding Nemo",
+  "favorite pet": "Nemo",
+  "posts": [
+    {
+      "text": "I'll never forget the time I spent with my family, an unforgettable experience. I know that one day we'll be together again to enjoy each other's company.",
+      "image": "http://www.seetorontonow.com/wp-content/uploads/2016/08/toronto-in-september-thumbnail.jpg",
+    },
+    {
+      "text": "I love this movie.",
+      "image": "https://upload.wikimedia.org/wikipedia/en/2/29/Finding_Nemo.jpg",
+    },
+    {
+      "text": "glub glub.",
+      "image": "http://goodtoknow.media.ipcdigital.co.uk/111/000008d66/342e_orh100000w614/your-guide-to-family-pets.jpg",
+    },
+    {
+      "text": "Vietnam is so beautiful and the culture is amazing. And can I just say that pho is my new favorite food!",
+      "image": "https://brightcove04pmdo-a.akamaihd.net/5104226627001/5104226627001_5222656667001_5219479420001-vs.jpg?pubId=5104226627001&videoId=5219479420001",
+    },
+  ],
+  "favorite animal": "fish",
+  "favorite color": "purple",
+  "background color": "#5900a3",
+  "favorite season": "spring",
+  "profile image": "https://leadershipspirit.files.wordpress.com/2013/10/stock_2013_hi-res-download_2_1.jpg",
+  "banner image": "https://media.timeout.com/images/102873865/630/472/image.jpg",
+},
+
+];
+

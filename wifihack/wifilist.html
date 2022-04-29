@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Libraries -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+     <script src="https://use.fontawesome.com/9f03d0cffe.js"></script>
+
+
+
+
+    <script>
+
+    var realname = getQueryVariable("realname").replace(/%20/g, " ");
+    var roguename = getQueryVariable("roguename").replace(/%20/g, " ");
+    roguename = roguename.replace(/%22/g,"");
+    roguename = roguename.replace(/%27/g,"");
+    function getQueryVariable(variable)
+    {
+           var query = window.location.search.substring(1);
+           var vars = query.split("&");
+           for (var i=0;i<vars.length;i++) {
+                   var pair = vars[i].split("=");
+                   if(pair[0] == variable){return pair[1];}
+           }
+           return(false);
+    }
+
+
+
+
+    $(document ).ready(function() {
+        $("#rogue").html(roguename);
+        $("#real").html(realname);
+        var newmessage = "Now let's check if your fake hotspot is visible among the available networks."
+          parent.postMessage({
+           type: 'chat-box-message',
+           message: newmessage,
+        }, '*');
+
+
+    });
+
+      var clicked = false;
+        $(document).on('click', '#dropdown', function( event ) {
+        var newmessage= 'Your wifi net is up! </strong>  Whoever accesses to this wifi will have their internet connection compromised.';
+        if (!clicked) {
+          setTimeout(function () {
+            parent.postMessage({
+               type: 'chat-box-message',
+               message: newmessage,
+            }, '*');
+
+              $('#gif').css({opacity: 0.0, visibility: "visible"}).animate({opacity: 1.0}, 1000);
+
+          }, 1000);
+          clicked = true;
+        }
+
+    });
+
+
+
+    </script>
+
+  </head>
+
+
+  <body>
+
+
+    <div class="dropdown" style="text-align: right;">
+
+      <button id="dropdown" style="background-color: #00FFFF; " class="btn btn-default btn-md dropdown-toggle" type="button" data-toggle="dropdown">
+        <i class="fa fa-wifi"></i>
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu dropdown-menu-right">
+        <li><a href="#" id="rogue"></a></li>
+        <li><a href="#" id="real"></a></li>
+        <li><a href="#" id="extra1"> KIC SMARTDoc </a></li>
+        <li><a href="#" id="extra2"> CVS Secure</a></li>
+        <li><a href="#" id="extra3"> Xfinity</a></li>
+        <li><a href="#" id="extra3"> --------------------</a></li>
+        <li><a href="#" id="extra4"> Join Other Network...</a></li>
+        <li><a href="#" id="extra5"> Create Network...</a></li>
+        <li><a href="#" id="extra6"> Open Network Preferences...</a></li>
+
+
+      </ul>
+    </div>
+    <div style="margin-top:20px; margin-left:20px; margin-right:20px;">
+
+      
+        <a id="gif" href="results.html" style="visibility: hidden;">
+        <img src="wait.gif" alt="waiting Icon" style="width:100%;height:100%; ">
+        </a>
+        </div>
+    </div>
+  </body>
+</html>

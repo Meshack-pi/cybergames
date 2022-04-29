@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Libraries -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+
+    <script src="../data/puzzleData.js"></script>
+    <script src="../data/bankData.js"></script>
+    <script src="../data/fakebookData.js"></script>
+    <script src="../data/imageSources.js"></script>
+    <script src="../randomize.js"></script>
+    <script src="instructions.js"></script>
+    <script src="../inject.js"></script>
+    <link rel="stylesheet" href="instructions.css">
+  </head>
+  <body>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.7/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.7/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyChpNltRTBop-0KJPzZPbV_eyz4RXzt5_8",
+        authDomain: "cyberneticsx-app.firebaseapp.com",
+        databaseURL: "https://cyberneticsx-app-default-rtdb.firebaseio.com",
+        projectId: "cyberneticsx-app",
+        storageBucket: "cyberneticsx-app.appspot.com",
+        messagingSenderId: "37777051682",
+        appId: "1:37777051682:web:8d922d7fbb69d467733a7b",
+        measurementId: "G-G4XEBHL1PC"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
+    <div class="header"> Hacking!!</div>
+    <div id="carousel" class="carousel slide">
+      <ol class="carousel-indicators">
+        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel" data-slide-to="1"></li>
+        <li data-target="#carousel" data-slide-to="2"></li>
+        <li data-target="#carousel" data-slide-to="3"></li>
+        <li data-target="#carousel" data-slide-to="4"></li>
+        <li data-target="#carousel" data-slide-to="5"></li>
+        <li data-target="#carousel" data-slide-to="6"></li>
+        <li data-target="#carousel" data-slide-to="7"></li>
+        <li data-target="#carousel" data-slide-to="8"></li>
+      </ol>
+      <div class="carousel-inner">
+
+        <div class="item active">
+          <div class="title">Asterisk Services, Inc.</div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xs-5">
+                <img class="preview" src="https://24dlmn2bqamt1e72kah59881-wpengine.netdna-ssl.com/wp-content/uploads/2016/04/How-Hackers-Find-Your-Ecommerce-Website.jpg"></img>
+              </div>
+              <div class="col-xs-7">
+                <div class="terminal">
+                  <b>Asterisk Services:</b> You have contacted Asterisk Services. Please be discreet. How may we be of service to you?
+                  <br><b><span class="lucy-name"></span>:</b> I've got a person, <span class="jack-name"></span>, needs taking down. Smuggles crack, LSD... your regular party supplier.
+                  <br><b>Asterisk Services:</b> Anything else?
+                  <br><b><span class="lucy-name"></span>:</b> Runs Bexley Co., a ring for all the stupidest trash you can think of. Can't say too much for now. We'll talk later.
+                  <br>--<span class="lucy-name"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="title">Your Mission</div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xs-5">
+                <img class="preview" src="./images/starthack.jpeg"></img>
+              </div>
+              <div class="col-xs-7">
+                So you're the new recruit, huh? I'm sending you our "Asterisk Version 3.4" software now so you can hack your first client.
+                <div class="terminal" style="margin: 20px 0px">
+                  <center>&gt;&gt;Downloading&lt;&lt;</center>
+                  Asterisk 3.4 allows members of Asterisk to securely handle requests from clients on the deep web. The network provides an additional level of encryption, track erasure, and privacy.
+                </div>
+              Let's take down this CEO.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="title">Zirconium</div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xs-5">
+                <img class="preview" src="images/zirconium-ui.png"></img>
+              </div>
+              <div class="col-xs-7">
+                Asterisk uses the Zirconium browser within its network.
+                <br>
+                <br>Notable features:
+                <ul>
+                  <li>To open a new tab, press the “New Tab” button on the upper right corner.</li>
+                  <li>You may only access the web pages on the home page.</li>
+                  <li>You may either type the pages’ URLs in the URL bar or click the home page icons.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="title">Break My Cipher</div>
+          <div class="subtitle">https://www.breakmycipher.io</div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xs-5">
+                <img class="preview" src="images/cipher-ui.png"></img>
+              </div>
+              <div class="col-xs-7">
+                Break My Cipher allows you to intercept text messages from targeted numbers. To break the cipher, you must use a caesar cipher cycle running A through Z.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="title">WifiCrack</div>
+          <div class="subtitle">https://www.wificrack.com</div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xs-5">
+                <img class="preview" src="images/wificrack-ui.png"></img>
+              </div>
+              <div class="col-xs-7">
+                An online version of the proprietary software used to create Wifi hotspots, WifiCrack allows you to monitor all traffic passing through the hotspots you create.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="title">Zmail</div>
+          <div class="subtitle">https://www.zmail.com</div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xs-5">
+                <img class="preview" src="images/zmail-ui.png"></img>
+              </div>
+              <div class="col-xs-7">
+                An email client that will allow you to send phishing messages and viruses to targeted people, as well as to access their email.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="title">Fakebook</div>
+          <div class="subtitle">https://www.fakebook.com</div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xs-5">
+                <img class="preview" src="images/fakebook-ui.png"></img>
+              </div>
+              <div class="col-xs-7">
+                The most popular social networking site of the modern era. People post their entire lives on Fakebook, and you will probably learn more about their private lives here than anywhere else.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="title">Galactic Bank</div>
+          <div class="subtitle">https://www.galacticbank.com</div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xs-5">
+                <img class="preview" src="images/bank-ui.png"></img>
+              </div>
+              <div class="col-xs-7">
+                The Bank of the Milky Way Galaxy, Galactic Bank serves everyone from peasants to billionaires. With tighter security and privacy than a Swiss bank, Galactic Bank is the bank of choice for those with illegitimate earnings.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="title">Time to Jump</div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xs-7">
+                <img class="preview" id="credits-hide" src="images/istockphoto-1208010525-612x612.jpg"></img>
+                <div class="credits"></div>
+              </div>
+              <div class="col-xs-5">
+                Are you ready, recruit? Once you begin there is no turning back.
+                <button type="button" class="btn btn-info btn-large btn-block menu-btn" id="begin-btn">Begin Mission</button>
+
+                <button type="button" class="btn btn-info btn-large btn-block menu-btn" id="view-btn">Show Credits</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <a class="left carousel-control" href="#carousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a class="right carousel-control" href="#carousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a> 
+    </div>
+  </body>
+</html>

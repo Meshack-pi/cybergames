@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Libraries -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+     <script src="https://use.fontawesome.com/9f03d0cffe.js"></script>
+      
+      
+      
+      
+      
+    <script> 
+
+    var jso = JSON.parse(window.sessionStorage.getItem("puzzleData"));
+    console.log(jso);
+    var realname = jso["wifi"];
+    var hotel = jso["location"];
+    $(document ).ready(function() {
+        $("#real").html(realname);
+
+       // MESSAGING PROTOCOL TO POST "message contents" onto chatbox
+       setTimeout(function() {
+          parent.postMessage({
+             type: 'chat-box-message',
+             message: 'Are you there at the ' + hotel + '?',
+          }, '*');
+       }, 200);
+
+
+      setTimeout(function() {
+        var newmessage= 'Great! Now you need to find out the name of the official wifi network there (by clicking the Wifi-network button)';
+        parent.postMessage({
+           type: 'chat-box-message',
+           message: newmessage,
+        }, '*');
+      }, 2000);
+
+    });
+
+    var clickeddropdown = false;
+    $(document).on('click', '#dropdown', function( event ) {
+        var newmessage= realname + ' it is. <br> You have launched the Aircrack app which would help to create a fake wifi hotspot - that\'s good. <br> To actually create a network called ,e.g. "mywifi", you can type <br> <strong> ~# airbase- c 11 -v mon0 "mywifi"  </strong> <br> in the terminal. <br> Your goal is to trick people to access to your hotspot thinking that they were logging into the official ' + realname;
+      if (!clickeddropdown) {
+              setTimeout(function () {
+        parent.postMessage({
+           type: 'chat-box-message',
+           message: newmessage,
+        }, '*');
+      }, 1000);
+             clickeddropdown = true; 
+      }
+
+        
+    });
+    
+    function clickedImage() {
+      $("#makewifi").focus();
+    }
+
+    $(document).keyup(function (e) {
+
+      if ($("#makewifi:focus") && (e.keyCode === 13)) {
+         var startWith = new RegExp("~# airbase- c 11 -v mon0");
+         var userinput = $("#makewifi").val();
+         if (!startWith.test(userinput)) {
+            alert("You would need those starting commands.");
+             $("#makewifi").val("~# airbase- c 11 -v mon0 ")
+         } else {
+
+            //wifi dependable:
+            if (realname == "Blazeit Hotel Wi-fi") {
+              validateWifi(realname, userinput, "blazeit");
+            };
+            if (realname == "Dank Hotel Guest Wi-fi") {
+              validateWifi(realname, userinput, "dank");
+            };
+            if (realname == "Hi-Af Hotel Free Wi-fi") {
+              validateWifi(realname, userinput, "hi-af");
+            };
+
+         }
+
+
+      }
+ });
+    function validateWifi(realname, input, needinclude) {
+      if ((input.toLowerCase().includes(needinclude) && input.toLowerCase().includes("wi") && input.toLowerCase().includes("fi") /*&& (input.includes("\"") || input.includes("\'"))*/) || input == "~# airbase- c 11 -v mon0 sb") {
+        creatingWifi(input);
+      } else {
+        //UNSTATISFY  TODO:
+
+        $("#makewifi").val("~# airbase- c 11 -v mon0 ");
+      }
+    }
+
+    function creatingWifi(input) {
+      var message = "11:18:59  Successfully created a hotspot called: " + input.substring(24);
+
+      var roguename = input.substring(24);
+
+      $('#creatinghotspot').css({opacity: 0.0, visibility: "visible"}).animate({opacity: 1.0}, 800);
+
+      $("#makewifi").blur();
+
+      setTimeout(function() {
+        $("#success").text(message);
+        $("#success").css({opacity: 0.0, visibility: "visible"}).animate({opacity: 1.0}, 800);
+        setTimeout(function() {
+          window.location.href = "wifilist.html?realname="+realname + "&roguename="+roguename;
+        },3000);
+      },1500);
+
+    }
+    </script>
+
+
+<style>
+input:focus {
+    outline: none;
+}
+</style>
+
+
+  </head>
+  <body>
+      
+      
+        <div class="dropdown" style="text-align: right;">
+
+      <button id="dropdown" style="background-color: #00FFFF; " class="btn btn-default btn-md dropdown-toggle" type="button" data-toggle="dropdown">
+        <i class="fa fa-wifi"></i>
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu dropdown-menu-right">
+        <li><a href="#" id="rogue"></a></li>
+        <li><a href="#" id="real"></a></li>
+        <li><a href="#" id="extra1"> KIC SMARTDoc </a></li>
+        <li><a href="#" id="extra2"> CVS Secure</a></li>
+        <li><a href="#" id="extra3"> Xfinity</a></li>
+        <li><a href="#" id="extra3"> --------------------</a></li>
+        <li><a href="#" id="extra4"> Join Other Network...</a></li>
+        <li><a href="#" id="extra5"> Create Network...</a></li>
+        <li><a href="#" id="extra6"> Open Network Preferences...</a></li>
+
+
+      </ul>
+    </div>
+      
+      
+      
+      
+      
+    <div id="mainbody" style="position:relative"> 
+      <img id='mainimg' onclick="clickedImage()" src="assets/aircrack.png" style="width:1000px ;height:400px; position: relative;">
+      <input id="makewifi" type="text" autofocus="autofocus"  
+      onfocus="this.value = this.value;"/ style="width: 700px; background-color: black; position: absolute; top:225px; left: 70px; border: 0px solid black; color: #BBABB4; font-family: 'Inconsolata', monospace; font-size: 14px;" value=""></input>
+
+      <img  id="creatinghotspot" src="assets/creatinghotspot.png" style= " width: 60%; position: absolute; top: 245px; visibility: hidden; ">
+
+      <div id='success' style="visibility:hidden; width:700px; background-color:black; position: absolute; top:305px; left: 5px; border: 0px solid black; color: #BBABB4; font-family: 'Inconsolata', monospace;font-size: 14px; "> </div> 
+    </div>
+
+  </body>
+</html>

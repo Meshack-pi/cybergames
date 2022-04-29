@@ -1,0 +1,170 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  background: url(http://cdn.wonderfulengineering.com/wp-content/uploads/2014/06/Windows-XP-wallpapers-2.jpg) no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.bottom-bar {
+  position: fixed;
+  bottom: 0px;
+  left 0px;
+  width: 100%;
+  background: linear-gradient(#146eff, #149dff);
+}
+
+.main-content {
+  height: calc(100% - 34px);
+  margin-bottom: 34px;
+}
+
+#sortable {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.start-btn {
+  border-radius: 0px 10px 10px 0px;
+}
+
+.start-btn, #sortable, .ui-state-default {
+  display: inline-block;
+}
+
+.mini-tab {
+  background: none;
+  border: none;
+}
+
+.mini-btn {
+  min-width: 100px;
+  background: linear-gradient(to top, #146eff, #149dff);
+  margin: 2px 0px 2px 5px;
+  padding: 4px 6px;
+  height: 100%;
+  font: 12pt arial;
+  font-weight: bold;
+  border-radius: 2px;
+  color: white;
+}
+
+.app-icon, .app-icon img {
+  width: 80px;
+  height: 80px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.window {
+  position: absolute;
+  width: 60%;
+  height: 80%;
+  top: 8%;
+  left: 20%;
+  display: none;
+}
+
+.window-header {
+  margin: 0px;
+  padding-left: 10px;
+}
+
+.window-content {
+  width: 100%;
+  height: calc(100% - 22px);
+}
+
+.max-btn, .min-btn, .close-btn {
+  float: right;
+  border-radius: 0px;
+}
+
+.chat {
+  border-radius: 0px;
+  box-shadow: none;
+  z-index: 1;
+}
+
+.app-window {
+  left: 8%;
+}
+
+.chat-window {
+  width: 25%;
+  left: 70%;
+  z-index: 1;
+  display: block;
+}
+
+.start-menu {
+  height: 60%;
+  width: 25%;
+  position: absolute;
+  left: 0px;
+  bottom: 34px;
+  z-index: 999999999;
+  display: none;
+}
+
+.start-title {
+  padding: 5px 10px;
+  background: linear-gradient(#146eff, #149dff);
+  border-radius: 10px 10px 0px 0px;
+}
+
+.start-name {
+  display: inline-block;
+  vertical-align: middle;
+  font: italic 18pt arial;
+  color: white;
+  margin-left: 10px;
+}
+
+.start-content {
+  background: linear-gradient(to right, #ccf2ff, #99e6ff);
+  height: calc(100% - 48px);
+  padding: 5px 10px;
+  overflow: scroll;
+}
+
+.start-icon {
+  height: 38px;
+  width: 38px;
+  border-radius: 5px;
+  border: 1px solid white;
+}
+
+.start-row {
+  height: 50px;
+  margin-bottom: 5px;
+  font: 12pt times;
+/*  border-bottom: 1px solid gray; */
+}
+
+.menu-icon {
+  height: 100%;
+  margin-right: 10px;
+}
+
+.black-rect {
+  opacity: 0;
+  background-color: black;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 1000000000;
+}
+
+.left-menu-content {
+  width: 47%;
+  float: left;
+}
+
+.right-menu-content {
+  width: 47%;
+  float: right;
+}

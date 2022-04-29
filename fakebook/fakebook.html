@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Libraries -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- Our libraries -->
+    <link rel="stylesheet" href="main.css">
+    <script src="login.js"></script>
+  </head>
+  <body>
+    <img class="logo" src="images/logo.png">
+    <button type="button" class="login-btn btn btn-default" data-toggle="modal" data-target="#login">Login</button>
+    <div class="slogan">
+      <p>A Book lets you dream.</p>
+      <p>FakeBook lets your dreams come true.</p>
+    </div>
+
+    <!-- Modal for Login -->
+    <div class="modal fade" id="login">
+      <div class="modal-dialog inner" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="sign-in">Sign in to continue to FakeBook</span>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <input class="form-control" id="username" type="text" placeholder="Email"></input>
+            <input class="form-control" id="password" type="password" placeholder="Password"></input>
+            <div class="error">Incorrect username or password.</div>
+          </div>
+          <div class="modal-footer">
+            <a id="forgot-pass">Forgot your password?</a>
+            <button type="button" id="login-submit" class="btn btn-primary">Login</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for Reset Password -->
+    <div class="modal fade" id="reset">
+      <div class="modal-dialog inner" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="sign-in">Reset Password</span>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="alert alert-success">Password reset email successfully sent!</div>
+            <div class="alert alert-danger">This email does not exist in our database.</div>
+            <input class="form-control" id="email" type="text" placeholder="Email Address"></input>
+          </div>
+          <div class="modal-footer">
+            <button type="button" id="reset-submit" class="btn btn-success">Send Password Reset Email</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
